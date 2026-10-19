@@ -1,0 +1,116 @@
+[
+  {
+    "role": "user",
+    "content": "wt is the title"
+  },
+  {
+    "role": "assistant",
+    "content": "The title of the document is **Customer Churn Prediction System** [1][2][3][4].",
+    "sources": [
+      {
+        "n": 1,
+        "source": "INTERNSHIP_REPORT.pdf, page 11",
+        "type": "pdf",
+        "rerank_score": -9.59457015991211,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 1      CHAPTER – 1      ABOUT THE ORGANIZATION    1.1 Company Overview  TAKE IT SMART (OPC) PVT LTD is an Indian based engineering "
+      },
+      {
+        "n": 2,
+        "source": "INTERNSHIP_REPORT.pdf, page 34",
+        "type": "pdf",
+        "rerank_score": -9.702457427978516,
+        "snippet": "Customer Churn Prediction System    Dept, of CSE-DS, ACSCE                                   2025-26                                                Page. 24    }  /* Sidebar */  [data-testid=\"stSidebar\"] {      background: rgba(255,255,255,0.05);      backdrop-filter: blur(20px);      border-right: "
+      },
+      {
+        "n": 3,
+        "source": "INTERNSHIP_REPORT.pdf, page 7",
+        "type": "pdf",
+        "rerank_score": -9.875350952148438,
+        "snippet": "ii      TABLE OF CONTENT  Chapter  No.  TITLE Page No.   Abstract i   Table of Contents ii-iii   List of Figures Iv   List of Tables v    1    About the Organization    1-3   1.1 Company Overview 1         1.2 Mission and Vision 1    1.3 Products & Services 2    1.4 Organization Structure 2    1.5 O"
+      },
+      {
+        "n": 4,
+        "source": "INTERNSHIP_REPORT.pdf, page 33",
+        "type": "pdf",
+        "rerank_score": -10.301450729370117,
+        "snippet": "Customer Churn Prediction System    Dept, of CSE-DS, ACSCE                                   2025-26                                                Page. 23     Sample code  import streamlit as st  import pandas as pd  import numpy as np  import pickle  import plotly.graph_objects as go  import plot"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": "summerize the df"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on the provided documents, the dataframe (customer dataset) in the Customer Churn Prediction System is summarized as follows:\n\n**Dataset Description**\n*   **Content:** Contains customer-related features and a target variable labeled \"Churn\" (Yes/No or 1/0) [3].\n*   **Data Types:** Includes both categorical and numerical columns [3].\n*   **Quality Issues:** The initial exploration identified the presence of missing values in some columns and duplicate rows [3].\n\n**Preprocessing Steps Applied to the Dataframe**\nTo prepare the data for the model, the following steps were taken:\n1.  **Cleaning:** Duplicate rows were removed to ensure data quality [3].\n2.  **Handling Missing Values:**\n    *   Categorical columns were filled with the **mode**.\n    *   Numerical columns were filled with the **mean** [3].\n3.  **Encoding:** Label Encoding was applied to convert categorical text data into numerical form [3].\n4.  **Splitting:**\n    *   The data was split into features (X) and the target variable (y, the Churn column).\n    *   The dataset was divided into a training set (80%) and a testing set (20%) [3].\n5.  **Scaling:** StandardScaler was applied to normalize the features so they are on the same scale [3].\n\n**Key Features Identified**\nWhile the specific column names are not fully listed in the provided text, the analysis revealed that the most significant predictors of churn within the dataset are:\n*   Total Charges\n*   Monthly Charges\n*   Tenure\n*   Contract type\n*   Payment Method [2].",
+    "sources": [
+      {
+        "n": 1,
+        "source": "INTERNSHIP_REPORT.pdf, page 16",
+        "type": "pdf",
+        "rerank_score": 5.242160797119141,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 6      CHAPTER - 3  LEARNING EXPERIENCE  3.1 Project Overview  The Customer Churn Prediction System is a machine learning -based ap"
+      },
+      {
+        "n": 2,
+        "source": "INTERNSHIP_REPORT.pdf, page 24",
+        "type": "pdf",
+        "rerank_score": 5.012017250061035,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 14      CHAPTER - 4  LEARNING OUTCOME  4.1 Results and Discussion  The Customer Churn Prediction model was successfully developed a"
+      },
+      {
+        "n": 3,
+        "source": "INTERNSHIP_REPORT.pdf, page 17",
+        "type": "pdf",
+        "rerank_score": 4.742470741271973,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 7      5. Evaluation Layer: Accuracy calculation  6. Output Layer: Churn prediction result  3.4 Implementation  3.4.1 Data Understa"
+      },
+      {
+        "n": 4,
+        "source": "INTERNSHIP_REPORT.pdf, page 18",
+        "type": "pdf",
+        "rerank_score": 4.177972316741943,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 8      3.4.3 Model Building  Algorithm Used: Random Forest Classifier  • Ensemble learning method that combines multiple decision t"
+      }
+    ]
+  },
+  {
+    "role": "user",
+    "content": "skills used to build the project"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on the provided documents, the following skills were used to build the Customer Churn Prediction System:\n\n**Technical Skills**\n*   **Data Preprocessing & Feature Engineering:** Using Pandas and NumPy [2].\n*   **Machine Learning:** Building and evaluating models using Scikit-learn, specifically utilizing the Random Forest Classifier (an ensemble method) [1][2][4].\n*   **Data Visualization:** Using Matplotlib and Seaborn [2].\n*   **Model Deployment:** Saving and deploying models using Joblib [2][3].\n*   **Version Control:** Using Git [2][3].\n*   **Programming:** Proficiency in Python data science libraries [3].\n\n**Soft Skills**\n*   Analytical thinking and problem-solving in real-world data scenarios [2].\n*   Technical documentation and report writing [2].\n*   Team collaboration and communication [2].\n*   Time management and self-directed learning [2].",
+    "sources": [
+      {
+        "n": 1,
+        "source": "INTERNSHIP_REPORT.pdf, page 28",
+        "type": "pdf",
+        "rerank_score": 8.48672866821289,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 18      The Customer Churn Prediction project provided valuable insights into machine learning  and data preprocessing techniques. "
+      },
+      {
+        "n": 2,
+        "source": "INTERNSHIP_REPORT.pdf, page 27",
+        "type": "pdf",
+        "rerank_score": 7.232463836669922,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 17      CONCLUSION & SUMMARY  Skills Gained  Technical Skills  • Data preprocessing and feature engineering using Pandas and NumPy."
+      },
+      {
+        "n": 3,
+        "source": "INTERNSHIP_REPORT.pdf, page 25",
+        "type": "pdf",
+        "rerank_score": 6.236391067504883,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 15      4.3 Achievements  • Successfully completed the Customer Churn Prediction project end-to-end, from  data preprocessing to mo"
+      },
+      {
+        "n": 4,
+        "source": "INTERNSHIP_REPORT.pdf, page 16",
+        "type": "pdf",
+        "rerank_score": 6.157588005065918,
+        "snippet": "Customer Churn Prediction System  Dept.of CSE-DS,ACSCE                                           2025-26                                                           page. 6      CHAPTER - 3  LEARNING EXPERIENCE  3.1 Project Overview  The Customer Churn Prediction System is a machine learning -based ap"
+      }
+    ]
+  }
+]
